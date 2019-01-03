@@ -22,6 +22,9 @@
         "test:coverage": "treats test --coverage"
     },
     "dependencies": {
+        "@material-ui/core": "^3.8.1",
+        "classnames": "^2.2.6",
+        "react-bootstrap": "^0.32.4",
         "treats": "0.1.0-alpha"
     }
 }
