@@ -34,7 +34,6 @@ class Login extends React.Component {
 		const { classes } = this.props;
 		return (
 			<div>
-				<Header />
 				<div className={classes.loginRoot}>
 					<Card className={classes.root}>
 						<CardContent className={classes.content}>
@@ -50,7 +49,11 @@ class Login extends React.Component {
 								onChange={this.handleChange('password')}
 								margin='normal'
 							/>
-							<Button variant='contained' className={classes.btnLogin} color='primary'>
+							<Button
+								variant='contained'
+								className={classes.btnLogin}
+								color='primary'
+							>
 								Login
 							</Button>
 						</CardContent>

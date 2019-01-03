@@ -37,7 +37,6 @@ class Register extends Component {
 		const { classes } = this.props;
 		return (
 			<div>
-				<Header />
 				<div style={{ padding: 10 }}>
 					<Card className={classes.root}>
 						<CardContent className={classes.content}>
@@ -76,9 +75,15 @@ class Register extends Component {
 									onChange={this.handleCheckBox}
 									value={true}
 								/>
-								<Typography>Saya menyetujui Syarat dan Ketentuan</Typography>
+								<Typography>
+									Saya menyetujui Syarat dan Ketentuan
+								</Typography>
 							</div>
-							<Button variant='contained' className={classes.btnLogin} color='primary'>
+							<Button
+								variant='contained'
+								className={classes.btnLogin}
+								color='primary'
+							>
 								Login
 							</Button>
 						</CardContent>
