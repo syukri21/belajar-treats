@@ -7,7 +7,8 @@ const config = {
 	},
 	alias: {
 		'@page': path.resolve(__dirname, './src/page'),
-		'@components': path.resolve(__dirname, './src/components')
+		'@components': path.resolve(__dirname, './src/components'),
+		'@graphql': path.resolve(__dirname, './src/graphql')
 	}
 };
 

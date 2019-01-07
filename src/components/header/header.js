@@ -20,6 +20,9 @@ class Header extends Component {
 		this.setState({
 			active: nav
 		});
+		if (nav === 'Dashboard') {
+			return this.props.history.push('/');
+		}
 	};
 
 	handleClickLeftNav = (key) => () => {
@@ -41,7 +44,9 @@ class Header extends Component {
 							<li
 								key={nav}
 								onClick={this.handleClick(nav)}
-								className={classnames({ [style.active]: this.handleActiveColor(nav) })}
+								className={classnames({
+									[style.active]: this.handleActiveColor(nav)
+								})}
 							>
 								{nav}
 							</li>
@@ -51,7 +56,9 @@ class Header extends Component {
 						<Link
 							href='/login'
 							onClick={this.handleClickLeftNav(1)}
-							className={classnames(style.button, { [style.btnActive]: location.pathname === '/login' })}
+							className={classnames(style.button, {
+								[style.btnActive]: location.pathname === '/login'
+							})}
 						>
 							Masuk
 						</Link>

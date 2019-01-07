@@ -1,0 +1,8 @@
+mutation addUsers($username: String, $password: String, $email: String) {
+	addUsers(username: $username, password: $password, email: $email) {
+		id
+		username
+		password
+		email
+	}
+}

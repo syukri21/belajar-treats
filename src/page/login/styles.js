@@ -1,6 +1,7 @@
 export const styles = (theme) => ({
 	root: {
-		width: '600px'
+		width: '600px',
+		margin: '10px auto'
 	},
 	content: {
 		display: 'flex',
